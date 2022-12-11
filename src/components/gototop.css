@@ -1,0 +1,36 @@
+.top-btn-div{
+    
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.top-btn-div:hover{
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+.top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-btn-btn{
+    color: var(--color-footer); 
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .top-btn-div{
+        padding: 0.5rem;
+        right: 1rem;
+        bottom: 2rem;
+    }
+    
+}

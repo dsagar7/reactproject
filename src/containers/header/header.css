@@ -1,0 +1,151 @@
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__contant{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+
+}
+.header__contant h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+}
+.header__contant p{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.header__contant-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 1rem;
+}
+.header__contant-input input{
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 27px;
+    color: #FFF;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header__contant-input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    cursor: pointer;
+    color: #FFF;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.header__contant-input button:hover{
+    background: var(--gradient-text);
+}
+
+.header__contant-people{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+.header__contant-people img{
+    width: 181px;
+    height: 38px;
+}
+.header__contant-people p{
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFF;
+    line-height: 38px;
+    text-align: center;
+}
+
+.header__image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__image img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .header{
+        flex-direction: column;
+    }
+    .header__contant{
+        margin: 0 0 3rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header__contant-people{
+        flex-direction: column;
+    }
+    .header__contant-people p{
+        margin: 0;
+    }
+    .header__contant-input input, .header__contant-input button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .header__contant-input input, .header__contant-input button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
